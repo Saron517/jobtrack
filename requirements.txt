@@ -7,3 +7,15 @@ python-dotenv==1.2.4
 sqlparse==0.6.0
 typing_extensions==4.16.0
 tzdata==2026.6
+django-filter==26.2
+djangorestframework_simplejwt==5.5.1
+PyJWT==2.15.1
+
+# test dependencies
+pytest==9.2.0
+pytest-django==4.14.0
+colorama==0.4.6
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0

@@ -8,6 +8,9 @@ from .serializers import ApplicationSerializer
 class ApplicationViewSet(viewsets.ModelViewSet):
     serializer_class = ApplicationSerializer
     permission_classes = [IsAuthenticated]
+    filterset_fields = ["status"]
+    search_fields = ["company", "job_title", "location"]
+    ordering_fields = ["applied_on", "created_at", "company"]
 
     def get_queryset(self):
         # Only MY applications
